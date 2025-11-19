@@ -1,0 +1,257 @@
+:root {
+  --yellow: #FFD84D;
+  --blue: #0d6efd;
+  --muted: #6c757d;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.top-yellow {
+  background: var(--yellow);
+}
+
+.top-nav a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-sep {
+  height: 1px;
+  background: #333;
+  opacity: 0.15;
+  margin: 0.5rem 0 1rem;
+}
+
+/* OFFER HEADINGS */
+.offer-heading-box {
+  background: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 6px;
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.offer-wrapper {
+  background: #fff;
+  padding: 1.5rem 0;
+  border-radius: 8px;
+}
+
+/* HAMBURGER ICON */
+.navbar-toggler-icon {
+  width: 25px;
+  height: 2px;
+  background: #000;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before { top: -6px; }
+.navbar-toggler-icon::after { top: 6px; }
+
+/* HERO */
+.hero { padding: 3rem 1rem; }
+.hero h1 { font-weight: 700; }
+.hero p { max-width: 58ch; }
+
+/* SERVICES */
+.services-yellow {
+  background: var(--yellow);
+  padding: 3rem 1rem;
+}
+
+.service-card {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.service-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-text {
+  color: #000;
+}
+
+/* INFO SECTION */
+.info-white {
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+.info-box { padding: 1rem; }
+
+/* DEMO SECTION */
+.demo-yellow {
+  background: var(--yellow);
+  padding: 3rem 1rem;
+}
+
+.demo-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.btn-view {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+}
+
+/* CONTACT */
+.contact-white {
+  background: #fff;
+  padding: 2.5rem 1rem;
+}
+
+/* Equal height for demo cards on desktop */
+@media (min-width: 768px) {
+  .demo-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* About section wrapper */
+.about-wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* ensures headings and text are centered */
+}
+
+/* Make both boxes aligned + centered */
+.info-box {
+  padding: 1rem;
+  text-align: center;   /* center heading + text lines */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centers text block */
+}
+
+/* Vertical divider */
+.vertical-divider {
+  width: 2px;
+  background: #bbb;
+  height: 100%;
+  opacity: 0.8;
+  margin: 0 auto; /* ensures it's centered */
+}
+
+/* On small screens, hide divider */
+@media (max-width: 767px) {
+  .vertical-divider {
+    display: none;
+  }
+}
+
+
+
+
+/* ---------------- GENERAL STYLES ---------------- */
+
+header.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 350px;
+    background: #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.circle-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-box {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+@media (max-width: 768px) {
+    .video-placeholder {
+        height: 240px;
+        font-size: 1.1rem;
+    }
+
+    .circle-img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .circle-img {
+        margin-bottom: 10px;
+    }
+}
+
+

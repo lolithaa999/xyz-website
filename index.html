@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo of Sample Website</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-yellow">
+    <div class="container py-3">
+      <div class="d-flex align-items-center justify-content-between top-nav">
+
+        <div class="d-flex align-items-center gap-3">
+
+          <button class="btn d-md-none p-0 me-2" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <span class="fw-bold">www.xyz.com</span>
+
+          <nav class="d-none d-md-flex align-items-center">
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+        </div>
+      </div>
+
+      <div class="nav-sep"></div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <a href="#" class="d-block mb-2">Home</a>
+          <a href="#services" class="d-block mb-2">Services</a>
+          <a href="#about" class="d-block mb-2">About</a>
+          <a href="#works" class="d-block mb-2">Works</a>
+          <a href="#contact" class="d-block mb-2">Contact</a>
+        </div>
+      </div>
+
+      <div class="row align-items-center hero">
+        <div class="col-md-8">
+          <h1>One Page Sample</h1>
+          <h1>Website Example</h1>
+          <p class="lead">This page shows a one-page sample website with details such as site name, contact details, main service features, demo & resource details</p>
+
+          <h5 class="mt-4">WELCOME</h5>
+          <p>Details of the basic product/service which is offered</p>
+        </div>
+
+        <div class="col-md-4 text-center d-none d-md-block">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600"
+               class="img-fluid rounded" alt="Image">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services" class="services-yellow">
+    <div class="container">
+      
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h3 class="offer-heading-box">Our Services</h3>
+          <p class="services-text">This is a great place for you to add a short introduction about the services you offer.</p>
+        </div>
+      </div>
+
+      <div class="row gy-3">
+
+        <div class="col-md-4">
+            <div class="service-card">
+            <div class="service-img">
+                <img src="https://img.icons8.com/ios-filled/100/000000/maintenance.png" alt="Service Icon 1">
+            </div>
+            <h5 class="mt-2">Service 1</h5>
+            <p>Service 1 Description</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+            <div class="service-img">
+                <img src="https://img.icons8.com/ios-filled/100/000000/services.png" alt="Service Icon 2">
+            </div>
+            <h5 class="mt-2">Service 2</h5>
+            <p>Service 2 Description</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+            <div class="service-img">
+                <img src="https://img.icons8.com/ios-filled/100/000000/automatic.png" alt="Service Icon 3">
+            </div>
+            <h5 class="mt-2">Service 3</h5>
+            <p>Service 3 Description</p>
+            </div>
+        </div>
+
+        </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="about" class="info-white">
+    <div class="container">
+        <div class="row justify-content-center align-items-stretch about-wrapper">
+
+        <div class="col-md-5 info-box">
+            <h4>Heading - left</h4>
+            <p>Text Line 1</p>
+            <p>Text Line 2</p>
+            <p>Text Line 3</p>
+            <p>Text Line 4</p>
+        </div>
+
+        <!-- Divider -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+            <div class="vertical-divider"></div>
+        </div>
+
+        <div class="col-md-5 info-box">
+            <h4>Heading - right</h4>
+            <p>Text Line 1</p>
+            <p>Text Line 2</p>
+            <p>Text Line 3</p>
+            <p>Text Line 4</p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+
+
+    <section id="works" class="demo-yellow">
+        <div class="container">
+            <div class="row text-center g-3">
+
+            <div class="col-md-4">
+                <div class="demo-card">
+                <h5>Demonstration</h5>
+                <p>View an 8 minute demo of our tools</p>
+                <button class="btn btn-view" onclick="location.href='demo.html'">View Demo</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="demo-card">
+                <h5>Examples</h5>
+                <p>View examples of knowledge vision presentations in action.</p>
+                <button class="btn btn-view" onclick="location.href='examples.html'">View Examples</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="demo-card">
+                <h5>Resources</h5>
+                <p>Websites, e-books on multimedia presentations.</p>
+                <button class="btn btn-view" onclick="location.href='resources.html'">View Resources</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+  
+  <footer id="contact" class="contact-white">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <h5>Contact Us:</h5>
+          <p>XXXXX XXXXX</p>
+        </div>
+
+        <div class="col-md-6">
+          <h5>Address:</h5>
+          <p>XXXXXXXXXX</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script>
+    document.querySelectorAll("#mobileMenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        const offcanvasEl = document.getElementById("mobileMenu");
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+        bsOffcanvas.hide();
+
+        const target = link.getAttribute("href");
+        setTimeout(() => {
+          if (target && target.startsWith("#")) {
+            document.querySelector(target).scrollIntoView({ 
+              behavior: "smooth" 
+            });
+          }
+        }, 300);
+      });
+    });
+  </script>
+
+</body>
+</html>
