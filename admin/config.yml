@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "hero"
+    label: "Hero Section"
+    file: "content/hero.json"
+    fields:
+      - { label: "Title Line 1", name: "titleLine1", widget: "string" }
+      - { label: "Title Line 2", name: "titleLine2", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "text" }
+      - { label: "Welcome Title", name: "welcomeTitle", widget: "string" }
+      - { label: "Welcome Text", name: "welcomeText", widget: "text" }
+      - { label: "Hero Image URL", name: "heroImageUrl", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Icon URL", name: "iconUrl", widget: "string" }
+
+  - name: "examples"
+    label: "Examples"
+    folder: "content/examples"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image URL", name: "imageUrl", widget: "string" }
+
+  - name: "resources"
+    label: "Resources"
+    folder: "content/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image URL", name: "imageUrl", widget: "string" }
+
+  - name: "contact"
+    label: "Contact Info"
+    file: "content/contact.json"
+    fields:
+      - { label: "Phone", name: "phone", widget: "string" }
+      - { label: "Address", name: "address", widget: "text" }
