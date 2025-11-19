@@ -25,7 +25,7 @@ body {
   margin: 0.5rem 0 1rem;
 }
 
-/* OFFER HEADINGS */
+
 .offer-heading-box {
   background: #fff;
   padding: 0.25rem 1rem;
@@ -40,7 +40,7 @@ body {
   border-radius: 8px;
 }
 
-/* HAMBURGER ICON */
+
 .navbar-toggler-icon {
   width: 25px;
   height: 2px;
@@ -62,12 +62,12 @@ body {
 .navbar-toggler-icon::before { top: -6px; }
 .navbar-toggler-icon::after { top: 6px; }
 
-/* HERO */
+
 .hero { padding: 3rem 1rem; }
 .hero h1 { font-weight: 700; }
 .hero p { max-width: 58ch; }
 
-/* SERVICES */
+
 .services-yellow {
   background: var(--yellow);
   padding: 3rem 1rem;
@@ -101,7 +101,7 @@ body {
   color: #000;
 }
 
-/* INFO SECTION */
+
 .info-white {
   background: #fff;
   padding: 3rem 1rem;
@@ -109,7 +109,7 @@ body {
 
 .info-box { padding: 1rem; }
 
-/* DEMO SECTION */
+
 .demo-yellow {
   background: var(--yellow);
   padding: 3rem 1rem;
@@ -128,13 +128,13 @@ body {
   border: none;
 }
 
-/* CONTACT */
+
 .contact-white {
   background: #fff;
   padding: 2.5rem 1rem;
 }
 
-/* Equal height for demo cards on desktop */
+
 @media (min-width: 768px) {
   .demo-card {
     height: 100%;
@@ -144,33 +144,33 @@ body {
   }
 }
 
-/* About section wrapper */
+
 .about-wrapper {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; /* ensures headings and text are centered */
+  text-align: center; 
 }
 
-/* Make both boxes aligned + centered */
+
 .info-box {
   padding: 1rem;
-  text-align: center;   /* center heading + text lines */
+  text-align: center;   
   display: flex;
   flex-direction: column;
-  align-items: center;  /* centers text block */
+  align-items: center;  
 }
 
-/* Vertical divider */
+
 .vertical-divider {
   width: 2px;
   background: #bbb;
   height: 100%;
   opacity: 0.8;
-  margin: 0 auto; /* ensures it's centered */
+  margin: 0 auto; 
 }
 
-/* On small screens, hide divider */
+
 @media (max-width: 767px) {
   .vertical-divider {
     display: none;
@@ -180,7 +180,7 @@ body {
 
 
 
-/* ---------------- GENERAL STYLES ---------------- */
+
 
 header.bg-warning {
     background-color: #ffc107 !important;
@@ -224,7 +224,7 @@ header.bg-warning {
 }
 
 
-/* ---------------- RESPONSIVE DESIGN ---------------- */
+
 
 @media (max-width: 768px) {
     .video-placeholder {
@@ -253,5 +253,6 @@ header.bg-warning {
         margin-bottom: 10px;
     }
 }
+
 
 
