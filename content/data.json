@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "titleLine1": "One Page Sample",
+    "titleLine2": "Website Example",
+    "subtitle": "This page shows a one-page sample website with details such as site name, contact details, main service features, demo & resource details",
+    "welcomeTitle": "WELCOME",
+    "welcomeText": "Details of the basic product/service which is offered",
+    "heroImageUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600"
+  },
+
+  "services": [
+    {
+      "name": "Service 1",
+      "description": "Service 1 Description",
+      "iconUrl": "https://img.icons8.com/ios-filled/100/000000/maintenance.png"
+    },
+    {
+      "name": "Service 2",
+      "description": "Service 2 Description",
+      "iconUrl": "https://img.icons8.com/ios-filled/100/000000/services.png"
+    },
+    {
+      "name": "Service 3",
+      "description": "Service 3 Description",
+      "iconUrl": "https://img.icons8.com/ios-filled/100/000000/automatic.png"
+    }
+  ],
+
+  "examples": [
+    {
+      "title": "Example 1",
+      "description": "Description of example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600"
+    },
+    {
+      "title": "Example 2",
+      "description": "Description of example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600"
+    },
+    {
+      "title": "Example 3",
+      "description": "Description of example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1481277542470-605612bd2d61?w=600"
+    }
+  ],
+
+  "resources": [
+    {
+      "title": "Useful Website",
+      "description": "Link to website",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600"
+    },
+    {
+      "title": "E-Book / PDF Guide",
+      "description": "Description of PDF/ E-Book Guide",
+      "imageUrl": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600"
+    }
+  ],
+
+  "contact": {
+    "phone": "XXXXX XXXXX",
+    "address": "XXXXXXXXXX"
+  }
+}
