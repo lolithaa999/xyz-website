@@ -7,7 +7,6 @@ async function loadJSON(path) {
   return await response.json();
 }
 
-// Cache data.json so we fetch it only once
 let siteDataPromise = null;
 
 async function loadData() {
@@ -19,7 +18,7 @@ async function loadData() {
 
 async function loadHero() {
   const title1El = document.getElementById("hero-title-1");
-  if (!title1El) return; // not on index.html
+  if (!title1El) return; 
 
   const data = await loadData();
   if (!data || !data.hero) return;
@@ -116,7 +115,7 @@ async function loadResources() {
 
 async function loadContact() {
   const phoneEl = document.getElementById("contact-phone");
-  if (!phoneEl) return; // not on index.html
+  if (!phoneEl) return; 
 
   const data = await loadData();
   if (!data || !data.contact) return;
